@@ -23,6 +23,7 @@ from aave.linking import link_sources
 from aave.manifest import scan_archive
 from aave.packets import generate_packet
 from aave.privacy_audit import audit_repository_privacy
+from aave.private_bridge import load_public_projection_receipt
 from aave.zip_archives import inspect_zip_archive
 
 
@@ -366,6 +367,20 @@ def build_parser() -> argparse.ArgumentParser:
     claims_build_parser.add_argument("--claims", required=True, type=Path)
     claims_build_parser.add_argument("--out", required=True, type=Path)
 
+    bridge_parser = subparsers.add_parser(
+        "bridge",
+        help="Validate public-safe receipts from a separately reviewed private pipeline.",
+    )
+    bridge_subparsers = bridge_parser.add_subparsers(
+        dest="bridge_command",
+        required=True,
+    )
+    bridge_validate_parser = bridge_subparsers.add_parser(
+        "validate-receipt",
+        help="Validate one closed-schema public projection receipt without reading sources.",
+    )
+    bridge_validate_parser.add_argument("--input", required=True, type=Path)
+
     return parser
 
 
@@ -569,6 +584,11 @@ def main(argv: list[str] | None = None) -> int:
             f"{graph_result.edge_count} edges."
         )
         print(f"Wrote {graph_result.output_path}")
+        return 0
+
+    if args.command == "bridge" and args.bridge_command == "validate-receipt":
+        load_public_projection_receipt(args.input)
+        print("Valid public projection receipt.")
         return 0
 
     parser.error(f"Unknown command: {args.command}")

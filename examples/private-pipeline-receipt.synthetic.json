@@ -1,0 +1,31 @@
+{
+  "boundary_contract": "aave-private-public-boundary.v1",
+  "cannot_support": [
+    "claim_validation",
+    "identity_verification",
+    "medical_or_genetic_interpretation",
+    "private_source_reconstruction"
+  ],
+  "consent_scope": "public_release",
+  "contains": {
+    "direct_identifiers": false,
+    "genotypes": false,
+    "health_measurements": false,
+    "local_paths": false,
+    "personal_recollections": false,
+    "private_values": false,
+    "raw_artifacts": false,
+    "source_artifact_hashes": false
+  },
+  "human_reviewed": true,
+  "privacy_label": "public_ok",
+  "privacy_tier": "P0",
+  "private_content_withheld": true,
+  "producer": "aave-private",
+  "projection_kind": "multimodal_summary_counts",
+  "public_projection_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "public_projection_item_count": 3,
+  "receipt_id": "rct_0123456789abcdef0123456789abcdef",
+  "schema_version": "aave.public-projection-receipt.v1",
+  "source_schema": "aave.synthetic-private-bundle.v1"
+}

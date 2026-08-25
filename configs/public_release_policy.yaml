@@ -6,6 +6,7 @@ allowed_content:
   - public_citations
   - synthetic_fixtures
   - sanitized_state
+  - public_projection_receipt
 blocked_content:
   - raw_genetic_data
   - authenticated_account_capture
@@ -14,6 +15,8 @@ blocked_content:
   - personal_recollection
   - residence_media
   - credential
+  - private_source_hash
+  - private_record_value
 external_writes: human_approval_required
 license_status: MIT
 official_slop_registration: not_submitted
