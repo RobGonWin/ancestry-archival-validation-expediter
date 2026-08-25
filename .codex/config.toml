@@ -1,0 +1,14 @@
+[mcp_servers.loop-engineering]
+command = "npx"
+args = ["-y", "@cobusgreyling/loop-mcp-server@1.2.0"]
+env = { LOOP_PROJECT_ROOT = "." }
+enabled_tools = [
+  "loop_list_patterns",
+  "loop_list_skills",
+  "loop_list_state_files",
+  "loop_get_pattern",
+  "loop_get_skill",
+  "loop_get_state",
+  "loop_recommend_pattern",
+  "loop_estimate_cost",
+]

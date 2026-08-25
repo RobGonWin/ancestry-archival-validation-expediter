@@ -1,0 +1,48 @@
+{
+  "schema_version": "aave.public-research-group/1.0",
+  "group_id": "wilson-rogers-public-longevity-context",
+  "label": "Wilson/Rogers public longevity research grouping",
+  "grouping_status": "family_social_cluster_hypothesis",
+  "warning": "This is a public-source research grouping, not proof of a genetic cluster or of any maintainer relationship.",
+  "members": [
+    {
+      "id": "bettie-rutherford-wilson",
+      "public_name": "Bettie Rutherford Wilson",
+      "reported_lifespan": "1890-09-13/2006-02-13",
+      "age_status": "documentarily_supported",
+      "source_ids": ["GRG-BETTIE-CURRENT", "YOUNG-2010-AGE115", "JEUNE-ETAL-2010-BETTIE"]
+    },
+    {
+      "id": "willie-rogers",
+      "public_name": "Willie Rogers",
+      "relationship_to": "bettie-rutherford-wilson",
+      "relationship_type": "publicly_reported_son",
+      "birth_year_status": "conflicting_public_reports_1908_1909_1910",
+      "source_ids": ["YOUNG-2010-AGE115", "LONGEVIQUEST-BETTIE-PROFILE"]
+    },
+    {
+      "id": "dewey-wilson",
+      "public_name": "Dewey Wilson",
+      "relationship_to": "bettie-rutherford-wilson",
+      "relationship_type": "documented_spouse",
+      "age_at_death_status": "conflicting_secondary_reports_93_or_95",
+      "source_ids": ["YOUNG-2010-AGE115", "JEUNE-ETAL-2010-BETTIE", "LONGEVIQUEST-BETTIE-PROFILE"]
+    },
+    {
+      "id": "elder-roma-wilson",
+      "public_name": "Elder Roma Wilson",
+      "reported_lifespan": "1910-12-22/2018-10-25",
+      "reported_age": 107,
+      "relationship_to": "bettie-rutherford-wilson",
+      "relationship_type": "secondary_source_reported_brother_in_law",
+      "relationship_status": "needs_primary_document_confirmation",
+      "source_ids": ["NEA-ROMA-1994", "SOULBAG-ROMA-2018", "LONGEVIQUEST-BETTIE-PROFILE"]
+    }
+  ],
+  "prohibited_inferences": [
+    "biological relationship to a maintainer",
+    "shared longevity genotype",
+    "memory or cognitive advantage",
+    "medical or causal conclusion"
+  ]
+}

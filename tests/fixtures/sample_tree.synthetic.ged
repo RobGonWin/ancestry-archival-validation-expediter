@@ -1,0 +1,46 @@
+0 HEAD
+1 SOUR AAVE_SYNTHETIC
+1 GEDC
+2 VERS 5.5.1
+1 CHAR UTF-8
+0 @S1@ SOUR
+1 TITL Synthetic birth certificate reference
+0 @I1@ INDI
+1 NAME John /Smith/
+1 SEX M
+1 BIRT
+2 DATE 12 JAN 1900
+2 PLAC Sampletown, Example State
+2 SOUR @S1@
+1 DEAT
+2 DATE 5 MAY 1980
+2 PLAC Sampletown, Example State
+1 NOTE Synthetic father record.
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Mary /Jones/
+1 SEX F
+1 BIRT
+2 DATE 3 MAR 1902
+2 PLAC Example City, Example State
+1 NOTE Synthetic mother record with a long
+2 CONC  continued note.
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Alice /Smith/
+1 SEX F
+1 BIRT
+2 DATE 1 APR 1930
+2 PLAC Example City, Example State
+1 NOTE Synthetic child record.
+1 FAMC @F1@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+1 MARR
+2 DATE 14 FEB 1925
+2 PLAC Example City, Example State
+2 NOTE Synthetic marriage note.
+1 SOUR @S1@
+0 TRLR

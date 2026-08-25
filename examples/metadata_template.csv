@@ -1,0 +1,2 @@
+artifact_id,person_slug,person_id,gedcom_id,title,date,source_confidence,privacy_label,notes,local_path
+RW-1994-NEA-001,,roma-wilson-i1,I1,Example family photo,1994,family_identified,private_family_only,Synthetic example row; replace before use,photos/RW-1994-NEA-001.jpg

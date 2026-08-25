@@ -1,0 +1,22 @@
+[
+  {
+    "rsid": "rs123456",
+    "gene": "EXAMPLE1",
+    "label": "Example educational SNP",
+    "category": "synthetic_example",
+    "source_url": "https://www.snpedia.com/index.php/Rs123456",
+    "evidence_note": "Synthetic placeholder for local parser testing and documentation.",
+    "limitations": "Not a real interpretation. Do not use this example for health, diagnostic, or longevity claims.",
+    "public_summary_allowed": true
+  },
+  {
+    "rsid": "rs999999",
+    "gene": "EXAMPLE2",
+    "label": "Example missing SNP",
+    "category": "synthetic_example",
+    "source_url": "https://www.snpedia.com/index.php/Rs999999",
+    "evidence_note": "Synthetic placeholder used to show missing/not-tested handling.",
+    "limitations": "Missing from a consumer raw file is not a negative result.",
+    "public_summary_allowed": false
+  }
+]

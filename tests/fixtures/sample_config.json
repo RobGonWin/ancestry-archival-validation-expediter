@@ -1,0 +1,9 @@
+{
+  "default_privacy_label": "private_family_only",
+  "default_source_confidence": "needs_review",
+  "excluded_directory_names": [
+    ".git",
+    "__pycache__",
+    "skip_me"
+  ]
+}

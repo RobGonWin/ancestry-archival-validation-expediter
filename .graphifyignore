@@ -1,0 +1,26 @@
+# Graphify may map reviewed code only. Private evidence is never semantic input.
+private_archive/
+people/
+genome/
+ancestryDNA.txt
+*ancestrydna*.txt
+*genotype*.txt
+browser-captures/
+local-vault/
+vault/
+out/
+outputs/
+exports/
+packets/
+*.ged
+*.zip
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.jsonl
+*.db
+*.sqlite*
+.env*
+**/secrets/**
+**/credentials/**

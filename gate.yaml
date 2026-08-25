@@ -1,0 +1,53 @@
+version: 1
+schema_version: 1
+mode: report_only
+max_attempts: 3
+same_error_limit: 3
+allow_roots:
+  - README.md
+  - src
+  - docs
+  - data
+  - tests
+  - examples
+  - .codex
+  - .agents/skills
+  - .github/agents
+  - .github/skills
+  - .github/copilot-instructions.md
+deny_globs:
+  - .env*
+  - "**/secrets/**"
+  - "**/credentials/**"
+  - local-vault/**
+  - raw-vault/**
+  - browser-captures/**
+  - account-captures/**
+  - "**/*ancestry*dna*"
+  - "**/*genotype*"
+  - "**/*.ged"
+  - "**/*.vcf"
+  - "**/*.mp4"
+denylist:
+  - .env*
+  - "**/secrets/**"
+  - "**/credentials/**"
+  - local-vault/**
+  - raw-vault/**
+  - browser-captures/**
+  - account-captures/**
+  - "**/*ancestry*dna*"
+  - "**/*genotype*"
+  - "**/*.ged"
+  - "**/*.vcf"
+  - "**/*.mp4"
+maxFiles: 0
+autoMergeAllowlist: []
+external_writes: false
+automated_publication: false
+human_gates:
+  - privacy_downgrade
+  - public_derivative
+  - relationship_conclusion
+  - genetic_or_longevity_interpretation
+  - license_change

@@ -1,0 +1,27 @@
+{
+  "claim_ids": [
+    "claim_synthetic_001"
+  ],
+  "consent_scopes": [
+    "private_research"
+  ],
+  "details": {
+    "summary": "Synthetic example with no real person or family data."
+  },
+  "envelope_id": "SYNTH-ARCHIVE-001",
+  "evidence_role": "documentary_record",
+  "privacy_label": "private_family_only",
+  "privacy_tier": "R2",
+  "provenance": {
+    "capture_method": "synthetic_fixture",
+    "captured_at": "2026-08-24T00:00:00Z",
+    "source_owner": "synthetic"
+  },
+  "recorded_at": "2026-08-24T00:00:00Z",
+  "schema_version": "1.0",
+  "source_class": "family_held_artifact",
+  "source_confidence": "private_artifact",
+  "subject_ids": [
+    "person_synthetic_001"
+  ]
+}

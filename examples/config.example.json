@@ -1,0 +1,34 @@
+{
+  "default_privacy_label": "private_family_only",
+  "default_source_confidence": "needs_review",
+  "artifact_id_patterns": [
+    "ART-1994-SRC-001",
+    "DOC-2004-REF-001",
+    "COLLECTION-IMAGE-001"
+  ],
+  "excluded_directory_names": [
+    ".git",
+    "__pycache__"
+  ],
+  "manual_source_links": [
+    {
+      "relative_path": "photos/ART-1994-SRC-001.jpg",
+      "person_id": "synthetic-person-i1",
+      "source_confidence": "family_identified",
+      "privacy_label": "private_family_only",
+      "notes": "Synthetic mapping; replace only inside a controlled local workspace."
+    }
+  ],
+  "packet_default_profile": "private_full",
+  "packet_citation_note": "Citation-ready notes require human review before publication.",
+  "zip_member_contexts": [
+    {
+      "zip_filename": "synthetic-family-archive.zip",
+      "member_prefix": "people/synthetic-person/",
+      "person_id": "synthetic-person-i1",
+      "family_context": "Synthetic subfolder association.",
+      "source_confidence": "needs_review",
+      "privacy_label": "private_family_only"
+    }
+  ]
+}

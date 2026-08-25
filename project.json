@@ -1,0 +1,21 @@
+{
+  "schema_version": "research-project-catalog/1.0",
+  "id": "aave",
+  "name": "Ancestry Archival Validation Expediter",
+  "repository": "https://github.com/RobGonWin/ancestry-archival-validation-expediter",
+  "integration_branch": "main",
+  "status": "active-public-source",
+  "license": {
+    "spdx": "MIT",
+    "state": "open-source"
+  },
+  "evidence_policy": "public-or-synthetic-only",
+  "funding": { "state": "none" },
+  "rewards": { "state": "disabled" },
+  "slop_registration": {
+    "state": "not-submitted",
+    "authority": "none",
+    "eligibility": "not-claimed",
+    "reason": "Governance, authority, eligibility, and any submission require a separate human decision."
+  }
+}

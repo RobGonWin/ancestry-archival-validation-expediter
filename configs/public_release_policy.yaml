@@ -1,0 +1,19 @@
+schema_version: 1
+policy_id: aave-public-release-v1
+integration_branch: main
+allowed_content:
+  - source_code
+  - public_citations
+  - synthetic_fixtures
+  - sanitized_state
+blocked_content:
+  - raw_genetic_data
+  - authenticated_account_capture
+  - private_family_record
+  - living_person_record
+  - personal_recollection
+  - residence_media
+  - credential
+external_writes: human_approval_required
+license_status: MIT
+official_slop_registration: not_submitted

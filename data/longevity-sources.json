@@ -1,0 +1,367 @@
+{
+  "schema_version": "aave.public-source-register/1.1",
+  "accessed_at": "2026-08-24",
+  "sources": [
+    {
+      "id": "YOUNG-2008-AALA-THESIS",
+      "authors": ["Robert Douglas Young"],
+      "year": 2008,
+      "title": "African American Longevity Advantage: Myth or Reality? A Racial Comparison of Supercentenarian Data",
+      "source_type": "masters_thesis",
+      "urls": [
+        "https://doi.org/10.57709/1062194",
+        "https://scholarworks.gsu.edu/bitstreams/61ab0001-a793-4ad1-bf66-5555b565bdd4/download",
+        "https://www.researchgate.net/publication/228697845_African_American_Longevity_Advantage_Myth_or_Reality_A_Racial_Comparison_of_Supercentenarian_Data"
+      ],
+      "evidence_role": "historical_population_context",
+      "supports": ["Historical comparison of validated supercentenarian mortality by recorded race."],
+      "cannot_support": ["Peer-reviewed journal status", "family cluster", "pedigree", "genetic mechanism", "causation"]
+    },
+    {
+      "id": "YOUNG-2010-AGE115",
+      "authors": ["Robert Young"],
+      "year": 2010,
+      "title": "Age 115 or more in the United States: Fact or fiction?",
+      "source_type": "scholarly_book_chapter",
+      "urls": [
+        "https://doi.org/10.1007/978-3-642-11520-2_15",
+        "https://www.demogr.mpg.de/books/drm/007/3-3.pdf"
+      ],
+      "evidence_role": "scholarly_age_validation",
+      "supports": ["Documentary age-validation method", "Bettie Wilson age case", "Rogers/Rodgers identity chain", "Willie Rogers date conflict"],
+      "cannot_support": ["inherited longevity", "perfect accuracy of family-reported dates"]
+    },
+    {
+      "id": "YOUNG-2004-BETTIE-VISIT",
+      "authors": ["Robert Young"],
+      "year": 2004,
+      "title": "Bettie Wilson Visit; November 28, 2004",
+      "source_type": "primary_observer_web_report",
+      "urls": ["https://grg.org/BWilson.htm"],
+      "evidence_role": "primary_observer_report",
+      "supports": ["Visit date", "reported observations during the visit"],
+      "cannot_support": ["presence of an unlisted person", "accuracy of a later recollection", "genetic mechanism"]
+    },
+    {
+      "id": "JEUNE-ETAL-2010-BETTIE",
+      "authors": ["Bernard Jeune", "Jean-Marie Robine", "Robert Young", "Bertrand Desjardins", "Axel Skytthe", "James W. Vaupel"],
+      "year": 2010,
+      "title": "Jeanne Calment and her successors: Biographical notes on the longest living humans",
+      "source_type": "coauthored_scholarly_book_chapter",
+      "urls": [
+        "https://doi.org/10.1007/978-3-642-11520-2_16",
+        "https://www.demogr.mpg.de/books/drm/007/3-4.pdf"
+      ],
+      "evidence_role": "coauthored_biographical_synthesis",
+      "supports": ["Historical biographical context for Bettie Wilson"],
+      "cannot_support": ["sole authorship by Robert Young", "family-specific causation"]
+    },
+    {
+      "id": "YOUNG-ETAL-2010-MYTHS",
+      "authors": ["Robert D. Young", "Bernard Jeune", "Jean-Marie Robine", "George M. Williams"],
+      "year": 2010,
+      "title": "Typologies of Extreme Longevity Myths",
+      "source_type": "peer_reviewed_methodology_article",
+      "urls": [
+        "https://doi.org/10.1155/2010/423087",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3062986/"
+      ],
+      "evidence_role": "validation_methodology",
+      "supports": ["Skeptical classification and validation of extreme-age claims"],
+      "cannot_support": ["specific kinship", "specific genetic hypothesis"]
+    },
+    {
+      "id": "OUELLETTE-PERLS-2025-RACE100",
+      "authors": ["Nadine Ouellette", "Thomas Perls"],
+      "year": 2025,
+      "title": "Race and ethnicity dynamics in survival to 100 years in the United States",
+      "source_type": "peer_reviewed_population_life_table_study",
+      "urls": [
+        "https://doi.org/10.1111/joim.20031",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11636438/",
+        "https://pubmed.ncbi.nlm.nih.gov/39628276/"
+      ],
+      "evidence_role": "population_context",
+      "supports": ["National mortality-crossover and survival estimates by broad NCHS race and ethnicity categories"],
+      "cannot_support": ["family cluster", "pedigree", "geographic cluster", "DNA ancestry", "genetic causation", "individual prognosis"]
+    },
+    {
+      "id": "KESTENBAUM-FERGUSON-2010-US",
+      "authors": ["Bert Kestenbaum", "B. Renee Ferguson"],
+      "year": 2010,
+      "title": "Supercentenarians in the United States",
+      "source_type": "scholarly_book_chapter",
+      "urls": ["https://www.demogr.mpg.de/books/drm/007/2-1.pdf"],
+      "evidence_role": "historical_demographic_context",
+      "supports": ["Historical U.S. validated-case demographics"],
+      "cannot_support": ["unchanged current validation status", "family-level mechanism"]
+    },
+    {
+      "id": "GRG-BETTIE-CURRENT",
+      "authors": ["Gerontology Research Group"],
+      "year": 2026,
+      "title": "Bettie Wilson",
+      "source_type": "current_registry_profile",
+      "urls": ["https://www.grg-supercentenarians.org/bettie-wilson/"],
+      "evidence_role": "current_validation_status",
+      "supports": ["Current registry status and validated lifespan"],
+      "cannot_support": ["biological mechanism", "unlisted family relationship"]
+    },
+    {
+      "id": "NEA-ROMA-1994",
+      "authors": ["National Endowment for the Arts"],
+      "year": 2011,
+      "title": "National Heritage Fellowship recipients",
+      "source_type": "official_government_program_record",
+      "urls": ["https://www.arts.gov/sites/default/files/2011-Heritage.pdf"],
+      "evidence_role": "public_biographical_record",
+      "supports": ["Elder Roma Wilson received a 1994 National Heritage Fellowship"],
+      "cannot_support": ["family relationship", "genetic longevity"]
+    },
+    {
+      "id": "SOULBAG-ROMA-2018",
+      "authors": ["Daniel Leon"],
+      "year": 2018,
+      "title": "Elder Roma Wilson, 1910-2018",
+      "source_type": "secondary_obituary_profile",
+      "urls": ["https://www.soulbag.fr/elder-roma-wilson-1910-2018/"],
+      "evidence_role": "secondary_public_biography",
+      "supports": ["Reported lifespan and late-life musical activity"],
+      "cannot_support": ["verified pedigree", "causal effect of activity", "genetic mechanism"]
+    },
+    {
+      "id": "LONGEVIQUEST-BETTIE-PROFILE",
+      "authors": ["LongeviQuest"],
+      "year": 2026,
+      "title": "Bettie Wilson",
+      "source_type": "secondary_longevity_profile",
+      "urls": ["https://longeviquest.com/supercentenarian/bettie-wilson/"],
+      "evidence_role": "secondary_relationship_context",
+      "supports": ["Secondary report of Wilson/Rogers family and in-law context"],
+      "cannot_support": ["primary-document relationship proof", "uncontested dates", "genetic cluster"]
+    },
+    {
+      "id": "IDL-INED-CURRENT",
+      "authors": ["International Database on Longevity", "French Institute for Demographic Studies"],
+      "year": 2026,
+      "title": "International Database on Longevity",
+      "source_type": "international_validated_longevity_database",
+      "urls": ["https://www.supercentenarians.org/en"],
+      "evidence_role": "age_validation_and_demography",
+      "supports": ["Systematically collected validated deaths at age 105 and older", "Comparative extreme-age demographic research"],
+      "cannot_support": ["complete media roster", "pedigree", "genetic mechanism", "unvalidated family report"]
+    },
+    {
+      "id": "ABDELRAHEEM-ETAL-2026-SCOPING",
+      "authors": ["Omnia Abdelraheem", "Wafa Abu El Kheir-Mataria", "Sungsoo Chun"],
+      "year": 2026,
+      "title": "Genetic, Socioecological, and Health Research on Extreme Longevity in Semisupercentenarians and Supercentenarians: A Scoping Review",
+      "source_type": "peer_reviewed_scoping_review",
+      "urls": [
+        "https://doi.org/10.1155/jare/1605361",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13090574/"
+      ],
+      "evidence_role": "research_scope_and_harmonization",
+      "supports": ["Age-band definitions", "Mapping of extreme-longevity research themes", "Need for harmonized multinational methods"],
+      "cannot_support": ["causation for every included association", "automatic comparability of heterogeneous cohorts", "individual prognosis"]
+    },
+    {
+      "id": "PERLS-ETAL-2002-SIBLINGS",
+      "authors": ["Thomas Perls", "et al."],
+      "year": 2002,
+      "title": "Life-long sustained mortality advantage of siblings of centenarians",
+      "source_type": "peer_reviewed_familial_aggregation_study",
+      "urls": [
+        "https://doi.org/10.1073/pnas.122587599",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC123086/"
+      ],
+      "evidence_role": "familial_aggregation_context",
+      "supports": ["Group-level survival advantage among siblings in 444 centenarian families"],
+      "cannot_support": ["purely genetic causation", "specific pedigree", "individual lifespan prediction"]
+    },
+    {
+      "id": "WOJCZYNSKI-ETAL-2022-LLFS",
+      "authors": ["Mary K. Wojczynski", "et al."],
+      "year": 2022,
+      "title": "NIA Long Life Family Study: Objectives, Design, and Heritability of Cross-Sectional and Longitudinal Phenotypes",
+      "source_type": "peer_reviewed_family_cohort_design",
+      "urls": [
+        "https://doi.org/10.1093/gerona/glab333",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8974329/"
+      ],
+      "evidence_role": "selected_long_lived_family_cohort",
+      "supports": ["Design and phenotypes of 4,953 people from 539 families selected for exceptional familial longevity"],
+      "cannot_support": ["representativeness of every reported family cluster", "complete explanation by common variants", "personal prognosis"]
+    },
+    {
+      "id": "RUBY-ETAL-2018-ASSORTATIVE",
+      "authors": ["J. Graham Ruby", "et al."],
+      "year": 2018,
+      "title": "Estimates of the Heritability of Human Longevity Are Substantially Inflated due to Assortative Mating",
+      "source_type": "peer_reviewed_historical_tree_analysis",
+      "urls": [
+        "https://doi.org/10.1534/genetics.118.301613",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6218226/"
+      ],
+      "evidence_role": "heritability_calibration",
+      "supports": ["Assortative mating and non-genetic structure can inflate conventional lifespan heritability estimates"],
+      "cannot_support": ["absence of rare genetic effects", "validation of each underlying public pedigree", "family-specific causation"]
+    },
+    {
+      "id": "HIRATA-ETAL-2020-BIOMARKERS",
+      "authors": ["Toshiharu Hirata", "et al."],
+      "year": 2020,
+      "title": "Associations of cardiovascular biomarkers and plasma albumin with exceptional survival to the highest ages",
+      "source_type": "peer_reviewed_longitudinal_biomarker_study",
+      "urls": [
+        "https://doi.org/10.1038/s41467-020-17636-0",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7393489/"
+      ],
+      "evidence_role": "biomarker_association",
+      "supports": ["Longitudinal biomarker associations in 1,427 people aged 85 to 110 and older"],
+      "cannot_support": ["causal biomarker mechanism", "clinical longevity test", "treatment recommendation", "individual prognosis"]
+    },
+    {
+      "id": "HASHIMOTO-ETAL-2019-CD4CTL",
+      "authors": ["Kosuke Hashimoto", "et al."],
+      "year": 2019,
+      "title": "Single-cell transcriptomics reveals expansion of cytotoxic CD4 T cells in supercentenarians",
+      "source_type": "peer_reviewed_small_single_cell_study",
+      "urls": [
+        "https://doi.org/10.1073/pnas.1907883116",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6883788/"
+      ],
+      "evidence_role": "immune_cell_association",
+      "supports": ["Exploratory observation of cytotoxic CD4 T-cell expansion in a small supercentenarian cohort"],
+      "cannot_support": ["causation", "cancer prevention", "population-wide prevalence", "consumer-genotype inference"]
+    },
+    {
+      "id": "HASHIMOTO-ETAL-2026-CD4CTL",
+      "authors": ["Kosuke Hashimoto", "et al."],
+      "year": 2026,
+      "title": "CD4 CTLs in Supercentenarians: Signs of Adaptive Expansion in Healthy Aging",
+      "source_type": "peer_reviewed_cross_sectional_immune_study",
+      "urls": [
+        "https://doi.org/10.1016/j.celrep.2026.117728"
+      ],
+      "secondary_coverage_urls": [
+        "https://www.scientificamerican.com/article/supercentenarians-have-a-cellular-superpower/",
+        "https://www.newscientist.com/article/2585352-supercentenarians-have-an-abundance-of-immune-cells-that-ward-off-cancer/",
+        "https://www.nature.com/articles/d41586-026-02587-1"
+      ],
+      "evidence_role": "immune_cell_association_and_adaptive_expansion_hypothesis",
+      "supports": ["Expanded cytotoxic CD4 T-cell populations in a small cohort including 10 supercentenarians", "Hypothesis of adaptive expansion in response to persistent antigen exposure"],
+      "cannot_support": ["causation of exceptional longevity", "cancer prevention", "cancer treatment", "individual prognosis", "consumer-genotype inference"]
+    },
+    {
+      "id": "PLAZA-FLORIDO-ETAL-2026-IMMUNE-REVIEW",
+      "authors": ["Abel Plaza-Florido", "et al."],
+      "year": 2026,
+      "title": "The long-lived immune system of centenarians",
+      "source_type": "peer_reviewed_narrative_review",
+      "urls": ["https://doi.org/10.1038/s41577-026-01291-5"],
+      "evidence_role": "immune_aging_synthesis",
+      "supports": ["Synthesis of immune-aging and multi-omics hypotheses in centenarian research"],
+      "cannot_support": ["causation from any one pathway", "uniform immune profile among all centenarians", "clinical intervention", "personal prediction"]
+    },
+    {
+      "id": "DEELEN-ETAL-2019-LONGEVITY-GWAS",
+      "authors": ["Joris Deelen", "et al."],
+      "year": 2019,
+      "title": "A meta-analysis of genome-wide association studies identifies multiple longevity genes",
+      "source_type": "peer_reviewed_gwas_meta_analysis",
+      "urls": [
+        "https://doi.org/10.1038/s41467-019-11558-2",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6694136/"
+      ],
+      "evidence_role": "population_genetic_association",
+      "supports": ["Replicated APOE association with survival phenotypes", "Candidate longevity loci with varying replication strength"],
+      "cannot_support": ["deterministic lifespan prediction", "ancestor of origin", "pedigree", "clinical interpretation of a consumer SNP"]
+    },
+    {
+      "id": "GARAGNANI-ETAL-2021-SEMISUPER-WGS",
+      "authors": ["Paolo Garagnani", "et al."],
+      "year": 2021,
+      "title": "Whole-genome sequencing analysis of semi-supercentenarians",
+      "source_type": "peer_reviewed_whole_genome_study",
+      "urls": [
+        "https://doi.org/10.7554/eLife.57849",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8096429/"
+      ],
+      "evidence_role": "candidate_genomic_mechanisms",
+      "supports": ["Candidate DNA-repair and clonal-hematopoiesis patterns in an Italian 105-plus cohort"],
+      "cannot_support": ["universal longevity variants", "causation", "consumer-genotype interpretation", "family-specific inheritance"]
+    },
+    {
+      "id": "GUNN-ETAL-2022-LONGEVITY-PRS",
+      "authors": ["Sarah Gunn", "et al."],
+      "year": 2022,
+      "title": "Distribution of 54 polygenic risk scores for common diseases in long lived individuals and their offspring",
+      "source_type": "peer_reviewed_polygenic_score_study",
+      "urls": [
+        "https://doi.org/10.1007/s11357-022-00518-2",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9135909/"
+      ],
+      "evidence_role": "group_level_polygenic_score_context",
+      "supports": ["Group-average differences for a small subset of 54 tested polygenic scores"],
+      "cannot_support": ["individual proof", "deterministic disease or lifespan prediction", "kinship", "universal transfer across ancestries"]
+    },
+    {
+      "id": "DING-ETAL-2023-PGS-PORTABILITY",
+      "authors": ["Yi Ding", "et al."],
+      "year": 2023,
+      "title": "Polygenic scoring accuracy varies across the genetic ancestry continuum",
+      "source_type": "peer_reviewed_polygenic_score_methods_study",
+      "urls": [
+        "https://doi.org/10.1038/s41586-023-06079-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10284707/"
+      ],
+      "evidence_role": "polygenic_score_portability_limit",
+      "supports": ["Polygenic-score accuracy can decline with genetic distance from training data"],
+      "cannot_support": ["invalidation of every polygenic score", "use without ancestry-aware validation", "individual longevity proof"]
+    },
+    {
+      "id": "TANDY-CONNOR-ETAL-2018-DTC-QC",
+      "authors": ["Stephanie Tandy-Connor", "et al."],
+      "year": 2018,
+      "title": "False-positive results released by direct-to-consumer genetic tests highlight the importance of clinical confirmation testing for appropriate patient care",
+      "source_type": "peer_reviewed_referral_sample_quality_study",
+      "urls": [
+        "https://doi.org/10.1038/gim.2018.38",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6301953/"
+      ],
+      "evidence_role": "consumer_genotype_quality_guardrail",
+      "supports": ["Clinical confirmation before medical interpretation of selected direct-to-consumer raw-data findings"],
+      "cannot_support": ["false-positive rate for every consumer SNP", "longevity prediction", "pedigree", "medical diagnosis from raw export data"]
+    },
+    {
+      "id": "CANDAL-PEDREIRA-ETAL-2025-BLUE-ZONES",
+      "authors": ["Cristina Candal-Pedreira", "et al."],
+      "year": 2025,
+      "title": "Blue Zones, an Analysis of Existing Evidence through a Scoping Review",
+      "source_type": "peer_reviewed_geographic_scoping_review",
+      "urls": [
+        "https://doi.org/10.14336/AD.2025.0461",
+        "https://pubmed.ncbi.nlm.nih.gov/40479568/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13061570/"
+      ],
+      "evidence_role": "geographic_longevity_cluster_context",
+      "supports": ["Comparative map of scientific evidence for ten studied longevity areas", "Stronger national-comparison evidence for Ogliastra, Okinawa, and Nicoya"],
+      "cannot_support": ["causal effect of residence", "equal validation of every named area", "family-specific longevity", "genetic inheritance"]
+    },
+    {
+      "id": "HANSEN-ETAL-2018-DENMARK-HOTSPOTS",
+      "authors": ["Anne Vinkel Hansen", "et al."],
+      "year": 2018,
+      "title": "Searching for longevity hotspots in Denmark",
+      "source_type": "peer_reviewed_national_registry_spatial_study",
+      "urls": [
+        "https://doi.org/10.1016/j.exger.2018.09.020",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6224260/"
+      ],
+      "evidence_role": "geographic_cluster_methods_and_migration_context",
+      "supports": ["Registry-based distinction between birth and late-life residence hotspots", "Evidence that migration and selection affect cluster interpretation"],
+      "cannot_support": ["causal benefit of moving to a hotspot", "unchanged modern exposure", "individual prognosis", "genetic mechanism"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "slop-track-map/1.0",
+  "project_id": "aave",
+  "assessment": {
+    "kind": "informational-conceptual-fit",
+    "source": "self-assessed",
+    "submission": "not-submitted",
+    "affiliation": "none",
+    "authority": "none",
+    "eligibility": "not-claimed",
+    "rewards": "not-promised",
+    "planned_contribution": "none"
+  },
+  "tracks": [
+    {
+      "id": "eliza",
+      "conceptual_fit": "primary",
+      "relevance": "Agent-facing evidence and archival-tooling patterns within AAVE.",
+      "contribution_status": "none"
+    },
+    {
+      "id": "asi",
+      "conceptual_fit": "secondary",
+      "relevance": "Evaluation, provenance, uncertainty, and verification patterns within AAVE.",
+      "contribution_status": "none"
+    },
+    {
+      "id": "delta-star",
+      "conceptual_fit": "not-applicable",
+      "relevance": "Only generic verification patterns overlap; AAVE has no Delta Star integration or track contribution.",
+      "contribution_status": "none"
+    }
+  ],
+  "boundary": "This map is not an application, affiliation, eligibility claim, reward promise, contribution plan, or authority to contact or contribute to an external project."
+}
