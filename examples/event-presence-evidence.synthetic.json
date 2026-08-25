@@ -1,0 +1,28 @@
+{
+  "event_id": "synthetic-community-eclipse-viewing",
+  "event_date": "2017-08-21",
+  "sources": [
+    {
+      "id": "public-scene",
+      "category": "public_scene_context",
+      "subject_specific": false,
+      "human_reviewed": true,
+      "source_url": "https://science.nasa.gov/eclipses/future-eclipses/eclipse-2017/"
+    },
+    {
+      "id": "aggregate-opportunity",
+      "category": "opportunity_context",
+      "subject_specific": false,
+      "human_reviewed": true,
+      "source_url": "https://api.census.gov/data/2024/acs/acs5/groups/B10001.html"
+    },
+    {
+      "id": "synthetic-first-person-report",
+      "category": "first_person_report",
+      "subject_specific": true,
+      "human_reviewed": false,
+      "independent_group": "reporter",
+      "source_ref": "synthetic:report-001"
+    }
+  ]
+}

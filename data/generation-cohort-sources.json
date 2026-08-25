@@ -1,0 +1,213 @@
+{
+  "schema_version": "aave.generation-cohort-source-register/1.0",
+  "accessed_at": "2026-08-25",
+  "sources": [
+    {
+      "id": "PEW-2023-GENERATION-METHOD",
+      "title": "How we plan to report on generations moving forward",
+      "source_type": "research_methodology_guidance",
+      "urls": ["https://www.pewresearch.org/short-reads/2023/05/22/how-pew-research-center-will-report-on-generations-moving-forward/"],
+      "evidence_role": "generation_label_limit",
+      "supports": ["Generation labels are broad analytical conventions", "Narrow birth cohorts may be preferable"],
+      "cannot_support": ["natural or universal generation boundaries", "individual traits from a label"]
+    },
+    {
+      "id": "PEW-GENERATION-DEFINITIONS",
+      "title": "Demographic Definitions",
+      "source_type": "research_center_convention",
+      "urls": ["https://www.pewresearch.org/demographic-definitions/"],
+      "evidence_role": "named_generation_convention",
+      "supports": ["Pew convention for Gen X, Silent, and Greatest birth cohorts"],
+      "cannot_support": ["official legal status of those labels", "Gen Alpha or Gen Beta boundaries"]
+    },
+    {
+      "id": "CENSUS-2025-BIRTH-COHORTS",
+      "title": "Birth Cohorts Geographic Mobility Report",
+      "source_type": "official_statistical_report",
+      "urls": ["https://www.census.gov/newsroom/press-releases/2025/birth-cohorts-geographic-mobility-report.html"],
+      "evidence_role": "named_cohort_convention",
+      "supports": ["Census report convention of Gen X 1965-1980, Gen Z 1997-2012, and Gen Alpha 2013 onward"],
+      "cannot_support": ["a universal Alpha boundary", "a Gen Beta definition", "family meeting counts"]
+    },
+    {
+      "id": "MCCRINDLE-2025-BETA",
+      "title": "Welcome Gen Beta",
+      "source_type": "private_research_firm_convention",
+      "urls": ["https://mccrindle.com.au/article/generation-beta-defined/"],
+      "evidence_role": "named_generation_convention",
+      "supports": ["McCrindle convention of Gen Alpha 2010-2024 and Gen Beta 2025-2039"],
+      "cannot_support": ["government or scientific consensus", "population traits of children not yet observed"]
+    },
+    {
+      "id": "UN-WPP-2024-BIRTHS",
+      "title": "World Population Prospects 2024",
+      "source_type": "official_population_dataset",
+      "urls": ["https://www.un.org/development/desa/pd/content/World-Population-Prospects-2024", "https://data.un.org/Data.aspx?d=PopDiv&f=variableID%3A51"],
+      "evidence_role": "birth_population_denominator",
+      "supports": ["Country, region, and global birth estimates by year"],
+      "cannot_support": ["family relationships", "meeting opportunity", "event attendance"]
+    },
+    {
+      "id": "ACS-2024-B01001",
+      "title": "ACS 2024 table B01001: Sex by Age",
+      "source_type": "official_aggregate_census_table",
+      "urls": ["https://api.census.gov/data/2024/acs/acs5/groups/B01001.html"],
+      "evidence_role": "age_population_context",
+      "supports": ["Aggregate age and sex estimates for ACS geographies"],
+      "cannot_support": ["kinship", "co-residence", "attendance", "identity"]
+    },
+    {
+      "id": "ACS-2024-B10001",
+      "title": "ACS 2024 table B10001: Grandchildren Under 18 Living With a Grandparent Householder by Age",
+      "source_type": "official_aggregate_census_table",
+      "urls": ["https://api.census.gov/data/2024/acs/acs5/groups/B10001.html"],
+      "evidence_role": "co_residence_opportunity_context",
+      "supports": ["Aggregate child-grandparent co-residence estimates"],
+      "cannot_support": ["a specific relationship", "contact outside the household", "event attendance"]
+    },
+    {
+      "id": "ACS-2024-B10051",
+      "title": "ACS 2024 table B10051: Grandparents Living With Own Grandchildren Under 18",
+      "source_type": "official_aggregate_census_table",
+      "urls": ["https://api.census.gov/data/2024/acs/acs5/groups/B10051.html"],
+      "evidence_role": "co_residence_opportunity_context",
+      "supports": ["Aggregate grandparent co-residence and caregiving estimates"],
+      "cannot_support": ["a specific household", "family closeness", "event attendance"]
+    },
+    {
+      "id": "YOUNG-2004-BETTIE-VISIT",
+      "title": "Bettie Wilson Visit; November 28, 2004",
+      "source_type": "primary_observer_web_report",
+      "urls": ["https://grg.org/BWilson.htm"],
+      "evidence_role": "public_event_scene",
+      "supports": ["Visit date", "observations and accident reported by Robert Young"],
+      "cannot_support": ["complete attendee roster", "presence of an unlisted person", "accuracy of a later recollection"]
+    },
+    {
+      "id": "YOUNG-2005-BETTIE-GALLERY",
+      "title": "Robert Young gallery: second documented Bettie Wilson visit",
+      "source_type": "primary_observer_photo_gallery",
+      "urls": ["https://grg.org/Gallery/ryounggallery.html"],
+      "evidence_role": "public_visit_chronology",
+      "supports": ["A dated September 13, 2005 visit involving Robert Young and Bettie Wilson"],
+      "cannot_support": ["purpose of the visit", "complete attendee roster", "presence of an unlisted person"]
+    },
+    {
+      "id": "GRG-2004-TITLE-NOTICE",
+      "title": "GRG historical notice after Emma Verona Johnston's death",
+      "source_type": "historical_registry_notice",
+      "urls": ["https://grg.org/Calment3.html"],
+      "evidence_role": "historical_title_context",
+      "supports": ["Historical notice that the oldest-living-American title passed to Bettie Wilson on December 1, 2004"],
+      "cannot_support": ["Guinness publication in a printed annual edition", "event attendance"]
+    },
+    {
+      "id": "PERKINS-2005-GUINNESS",
+      "title": "Documented Oldest Living Americans Are Our Neighbors",
+      "source_type": "contemporaneous_newspaper_reprint",
+      "urls": ["https://grg.org/PPerkins.htm"],
+      "evidence_role": "historical_title_reporting",
+      "supports": ["Contemporaneous report that Guinness accepted Bettie Wilson as oldest living American in April 2005"],
+      "cannot_support": ["appearance in a particular printed Guinness edition", "complete ceremony attendance"]
+    },
+    {
+      "id": "YOUNG-2010-AGE115",
+      "title": "Age 115 or more in the United States: Fact or fiction?",
+      "source_type": "scholarly_book_chapter",
+      "urls": ["https://doi.org/10.1007/978-3-642-11520-2_15", "https://www.researchgate.net/publication/226926281_Age_115_or_more_in_the_United_States_Fact_or_fiction"],
+      "evidence_role": "age_validation_methodology",
+      "supports": ["Document-first validation and examples of false or unresolved extreme-age claims", "Historical Knauss-Sullivan family-age and intergenerational context discussed by Young"],
+      "cannot_support": ["complete census of all supercentenarians", "meeting statistics", "memory accuracy", "transfer of one family's circumstances to another family"]
+    },
+    {
+      "id": "PERLS-ETAL-2007-SUPER-FAMILY",
+      "title": "Survival of parents and siblings of supercentenarians",
+      "source_type": "peer_reviewed_familial_aggregation_study",
+      "urls": ["https://doi.org/10.1093/gerona/62.9.1028", "https://pubmed.ncbi.nlm.nih.gov/17895443/"],
+      "evidence_role": "familial_longevity_context",
+      "supports": ["Group-level survival advantage in 29 studied supercentenarian families"],
+      "cannot_support": ["purely genetic causation", "specific-family inheritance", "survival of a descendant to 110"]
+    },
+    {
+      "id": "NIA-LLFS-2023",
+      "title": "The Future of Population-Based Studies in Alzheimer's Disease and Related Dementia Research",
+      "source_type": "official_research_program_summary",
+      "urls": ["https://www.nia.nih.gov/research/dn/workshops/workshop-future-population-based-studies-alzheimers-disease-and-related"],
+      "evidence_role": "selected_family_cohort_context",
+      "supports": ["LLFS studies children and grandchildren of selected long-lived families", "Selection is based on exceptional familial longevity"],
+      "cannot_support": ["representativeness of every family", "individual prognosis", "event presence"]
+    },
+    {
+      "id": "OUELLETTE-PERLS-2025-RACE100",
+      "title": "Race and ethnicity dynamics in survival to 100 years in the United States",
+      "source_type": "peer_reviewed_population_life_table_study",
+      "urls": ["https://doi.org/10.1111/joim.20031", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11636438/"],
+      "evidence_role": "population_survival_context",
+      "supports": ["U.S. survival patterns to age 100 across broad NCHS race and ethnicity categories"],
+      "cannot_support": ["DNA ancestry", "family cluster", "individual prognosis", "event presence"]
+    },
+    {
+      "id": "HOLT-LUNSTAD-ETAL-2010",
+      "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+      "source_type": "peer_reviewed_meta_analysis",
+      "urls": ["https://doi.org/10.1371/journal.pmed.1000316", "https://pubmed.ncbi.nlm.nih.gov/20668659/"],
+      "evidence_role": "social_connection_mortality_association",
+      "supports": ["Association between stronger social relationships and survival across 148 studies"],
+      "cannot_support": ["causation for a particular family", "genetic longevity", "contact with a specific relative", "event attendance"]
+    },
+    {
+      "id": "YATES-ETAL-2025-INFANT",
+      "title": "Hippocampal encoding of memories in human infants",
+      "source_type": "peer_reviewed_infant_fmri_study",
+      "urls": ["https://doi.org/10.1126/science.adt7570", "https://pubmed.ncbi.nlm.nih.gov/40112047/"],
+      "evidence_role": "infant_memory_encoding",
+      "supports": ["Memory-related hippocampal activity and later looking behavior beginning around age one"],
+      "cannot_support": ["adult-accessible autobiographical recall", "accuracy of a specific recollection", "event attendance"]
+    },
+    {
+      "id": "BAUER-LARKINA-2014",
+      "title": "The onset of childhood amnesia in childhood",
+      "source_type": "peer_reviewed_prospective_memory_study",
+      "urls": ["https://doi.org/10.1080/09658211.2013.854806", "https://pubmed.ncbi.nlm.nih.gov/24236647/"],
+      "evidence_role": "childhood_forgetting_context",
+      "supports": ["Prospective evidence that forgetting of age-three events increases across childhood"],
+      "cannot_support": ["impossibility of every early memory", "accuracy of a specific adult recollection", "event attendance"]
+    },
+    {
+      "id": "BAUER-2015-MEMORY-DEVELOPMENT",
+      "title": "Development of episodic and autobiographical memory: The importance of remembering forgetting",
+      "source_type": "peer_reviewed_developmental_review",
+      "urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC4669902/"],
+      "evidence_role": "childhood_amnesia_review",
+      "supports": ["Review of remembering, forgetting, and the development of episodic and autobiographical memory", "Childhood amnesia can reflect accelerated forgetting rather than absence of early encoding"],
+      "cannot_support": ["accuracy of a specific adult recollection", "identity of event attendees", "recovery of historical truth through cueing"]
+    },
+    {
+      "id": "BAUER-ETAL-2019-FIRST-MEMORIES",
+      "title": "Evidence Against Depiction as Fiction: A Comment on Fictional First Memories",
+      "source_type": "peer_reviewed_scholarly_comment",
+      "urls": ["https://doi.org/10.1177/0956797619834510"],
+      "evidence_role": "earliest_memory_methodological_caution",
+      "supports": ["Age alone is insufficient to classify an earliest-memory report as fiction"],
+      "cannot_support": ["truth of a specific earliest memory", "identity of people present", "attendance"]
+    },
+    {
+      "id": "BORRELLI-ETAL-2024-TRAUMA-AM",
+      "title": "The relationship between childhood interpersonal and non-interpersonal trauma and autobiographical memory: a systematic review",
+      "source_type": "peer_reviewed_systematic_review",
+      "urls": ["https://doi.org/10.3389/fpsyg.2024.1328835", "https://pubmed.ncbi.nlm.nih.gov/38298520/"],
+      "evidence_role": "trauma_memory_context",
+      "supports": ["Mixed literature with a prevalent negative association between interpersonal childhood trauma and autobiographical memory"],
+      "cannot_support": ["ACEs improve early memory", "accuracy of a specific recollection", "event attendance"]
+    },
+    {
+      "id": "CDC-ACES-2026",
+      "title": "About Adverse Childhood Experiences",
+      "source_type": "official_public_health_guidance",
+      "urls": ["https://www.cdc.gov/aces/about/index.html"],
+      "evidence_role": "public_health_exposure_framework",
+      "supports": ["Definition and population-health consequences of ACEs"],
+      "cannot_support": ["memory-authenticity testing", "attendance", "a beneficial memory effect"]
+    }
+  ]
+}

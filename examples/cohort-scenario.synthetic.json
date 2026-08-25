@@ -1,0 +1,41 @@
+{
+  "scenario_id": "synthetic-rare-intergenerational-opportunity",
+  "birth_year": 2008,
+  "base_population": {
+    "low": 100000,
+    "high": 120000,
+    "source_url": "https://www.un.org/development/desa/pd/content/World-Population-Prospects-2024"
+  },
+  "generation_conventions": [
+    {
+      "convention": "Census 2025 report",
+      "source_url": "https://www.census.gov/newsroom/press-releases/2025/birth-cohorts-geographic-mobility-report.html",
+      "ranges": [{"label": "Gen Z", "start_year": 1997, "end_year": 2012}]
+    },
+    {
+      "convention": "McCrindle",
+      "source_url": "https://mccrindle.com.au/article/topic/generation-alpha/generation-alpha-mark-mccrindle-q-a-with-the-new-york-times/",
+      "ranges": [{"label": "Gen Z", "start_year": 1995, "end_year": 2009}]
+    }
+  ],
+  "factors": [
+    {
+      "id": "extreme-age-overlap",
+      "role": "demographic_overlap",
+      "low": 0.00001,
+      "high": 0.00002,
+      "evidence_level": "derived",
+      "independence": "independent",
+      "source_url": "https://www.supercentenarians.org/en"
+    },
+    {
+      "id": "relationship-and-contact-opportunity",
+      "role": "relationship_opportunity",
+      "low": 0.01,
+      "high": 0.05,
+      "evidence_level": "assumption",
+      "independence": "unknown",
+      "source_url": "https://api.census.gov/data/2024/acs/acs5/groups/B10001.html"
+    }
+  ]
+}
