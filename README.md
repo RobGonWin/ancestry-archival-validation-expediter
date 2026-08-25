@@ -17,6 +17,8 @@ recollections, or living-person records.
 - link sources conservatively and preserve ambiguous matches for review;
 - generate public-redacted, controlled, and expert-review metadata packets;
 - validate evidence envelopes and build typed support/contradiction graphs;
+- validate closed-schema public projection receipts from separately reviewed
+  private pipelines without reading private source artifacts;
 - parse a user-owned AncestryDNA text export offline against an explicit local
   SNP whitelist, with genotype-bearing outputs kept outside Git;
 - inspect saved archive and ZIP metadata without crawling or extraction; and
@@ -31,10 +33,20 @@ python -m pip install -e . pytest
 pytest -q
 python -m aave --help
 python -m aave privacy-audit --repo . --out .\audit --strict
+python -m aave bridge validate-receipt --input .\examples\private-pipeline-receipt.synthetic.json
 ```
 
 All examples are synthetic. Put real material in an ignored local vault and
 review every derivative before release.
+
+## Private/public integration boundary
+
+Public AAVE accepts only a small, pre-reviewed P0 receipt describing an
+already public-safe projection. It never ingests private health timelines,
+genotype bundles, source images, raw-source hashes, local paths, or record
+values. See
+[`docs/private-pipeline-integration.md`](docs/private-pipeline-integration.md)
+for the closed receipt contract and its limitations.
 
 ## Ancestry compatibility
 
