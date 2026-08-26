@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
 from aave.archive_formats import inspect_archive_formats
@@ -23,6 +24,11 @@ from aave.linking import link_sources
 from aave.manifest import scan_archive
 from aave.packets import generate_packet
 from aave.privacy_audit import audit_repository_privacy
+from aave.research_boundary import audit_research_boundary
+from aave.research_program import (
+    ResearchProgramValidationError,
+    validate_research_program,
+)
 from aave.source_register import audit_source_registers
 from aave.private_bridge import load_public_projection_receipt
 from aave.zip_archives import inspect_zip_archive
@@ -354,6 +360,44 @@ def build_parser() -> argparse.ArgumentParser:
         help="Exit with status 1 when any finding is present.",
     )
 
+    research_parser = subparsers.add_parser(
+        "research",
+        help="Validate a private hypothesis research program without promoting claims.",
+    )
+    research_subparsers = research_parser.add_subparsers(
+        dest="research_command",
+        required=True,
+    )
+    research_validate_parser = research_subparsers.add_parser(
+        "validate",
+        help="Write a private, path-free validation receipt for a manifest and register.",
+    )
+    research_validate_parser.add_argument("--manifest", required=True, type=Path)
+    research_validate_parser.add_argument("--register", required=True, type=Path)
+    research_validate_parser.add_argument("--out", required=True, type=Path)
+    research_validate_parser.add_argument(
+        "--private-root",
+        required=True,
+        type=Path,
+        help="Existing private root that must contain the output directory.",
+    )
+    research_validate_parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit with status 1 unless every promotion gate is ready for independent review.",
+    )
+
+    boundary_parser = subparsers.add_parser(
+        "boundary-audit",
+        help="Audit tracked text, paths, and remotes for forbidden project coupling.",
+    )
+    boundary_parser.add_argument("--repo", type=Path, default=Path("."))
+    boundary_parser.add_argument("--out", required=True, type=Path)
+    boundary_parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit with status 1 when a forbidden reference is present.",
+    )
     evidence_parser = subparsers.add_parser(
         "evidence",
         help="Validate or normalize an offline, user-owned evidence envelope.",
@@ -584,6 +628,45 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         return 0
 
+    if args.command == "research":
+        if args.research_command == "validate":
+            try:
+                research_result = validate_research_program(
+                    manifest_path=args.manifest,
+                    register_path=args.register,
+                    output_directory=args.out,
+                    private_root=args.private_root,
+                )
+            except (OSError, ResearchProgramValidationError):
+                print(
+                    "Research validation failed without exposing input paths or values.",
+                    file=sys.stderr,
+                )
+                return 1
+            print(
+                f"Research validation status: {research_result.status}; "
+                f"{research_result.hypothesis_count} hypotheses; "
+                f"{research_result.finding_count} findings."
+            )
+            print(f"Wrote private receipt {research_result.output_path.name}")
+            if args.strict and not research_result.promotion_ready:
+                return 1
+            return 0
+
+    if args.command == "boundary-audit":
+        boundary_result = audit_research_boundary(
+            repository_path=args.repo,
+            output_directory=args.out,
+        )
+        print(
+            f"Scanned {boundary_result.scanned_file_count} text files; "
+            f"{boundary_result.finding_count} forbidden references."
+        )
+        print(f"Boundary ready: {str(boundary_result.boundary_ready).lower()}")
+        print(f"Wrote {boundary_result.output_path}")
+        if args.strict and not boundary_result.boundary_ready:
+            return 1
+        return 0
     if args.command == "privacy-audit":
         audit_result = audit_repository_privacy(
             repository_path=args.repo,

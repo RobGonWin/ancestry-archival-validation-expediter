@@ -1,6 +1,7 @@
 {
-  "schema_version": "slop-track-map/1.0",
+  "schema_version": "slop-track-map/1.1",
   "project_id": "aave",
+  "refreshed_at": "2026-08-26",
   "assessment": {
     "kind": "informational-conceptual-fit",
     "source": "self-assessed",
@@ -27,9 +28,23 @@
     {
       "id": "delta-star",
       "conceptual_fit": "not-applicable",
-      "relevance": "Only generic verification patterns overlap; AAVE has no Delta Star integration or track contribution.",
+      "relevance": "Only generic verification patterns overlap. AAVE contains no Delta Star integration, dependency, or track contribution, and formal proof work is outside AAVE's scope.",
       "contribution_status": "none"
     }
   ],
-  "boundary": "This map is not an application, affiliation, eligibility claim, reward promise, contribution plan, or authority to contact or contribute to an external project."
+  "separate_preparation": {
+    "exists": true,
+    "location": "private repositories independent of AAVE",
+    "relationship_to_aave": "none",
+    "description": "Independent private clean-room snapshots of public upstream projects exist outside this repository. They share no remote, submodule, subtree, workflow, package dependency, or copied artifact with AAVE, and contain no AAVE data.",
+    "status": "no upstream contribution has been made, submitted, or authorized",
+    "why_recorded_here": "The previous revision of this map said planned_contribution was none without qualification. Recording that separately scoped preparation exists keeps this map accurate. It does not make AAVE a contributor, and it does not change any track rating above."
+  },
+  "boundary": "This map is not an application, affiliation, eligibility claim, reward promise, contribution plan, or authority to contact or contribute to an external project. Track ratings describe internal conceptual similarity only and rank neither acceptance likelihood nor value.",
+  "cannot_support": [
+    "This map does not establish eligibility, acceptance, ranking, award, or payment in any programme.",
+    "A conceptual-fit rating is not evidence that any contribution would be useful or accepted.",
+    "The existence of separate preparation does not imply it will ever be submitted."
+  ],
+  "assessment_scope": "This map rates the conceptual fit of AAVE itself. It does not describe, authorize, or rate any separate repository. planned_contribution stays 'none' because no contribution to any external project is authorized, prepared for submission, or scheduled."
 }
