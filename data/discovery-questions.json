@@ -1,0 +1,10 @@
+{
+  "schema_version": "aave.discovery-question-register/1.0",
+  "purpose": "Falsifiable public research questions anchored to declared source-register identifiers. Every entry in source_refs must name a source that a register in this repository actually declares, so a question cannot cite a literature impression. An empty list is the correct resting state.",
+  "cannot_support": [
+    "A registered question is not a finding, a result, or evidence of anything.",
+    "Registration does not establish feasibility, data access, licensing, or statistical power.",
+    "Nothing here supports a claim about any individual, family, or maintainer."
+  ],
+  "questions": []
+}

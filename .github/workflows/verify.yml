@@ -22,5 +22,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check -e . pytest
       - name: Run synthetic tests
         run: pytest -q
+      - name: Check public register and discovery-question integrity
+        run: python -m aave discovery-audit --repo . --out .ci/discovery --strict
       - name: Enforce public path preflight
         run: python -m aave privacy-audit --repo . --out .ci/privacy --strict

@@ -23,6 +23,7 @@ from aave.linking import link_sources
 from aave.manifest import scan_archive
 from aave.packets import generate_packet
 from aave.privacy_audit import audit_repository_privacy
+from aave.source_register import audit_source_registers
 from aave.private_bridge import load_public_projection_receipt
 from aave.zip_archives import inspect_zip_archive
 
@@ -331,6 +332,28 @@ def build_parser() -> argparse.ArgumentParser:
         help="Exit with status 1 when any blocker or review finding is present.",
     )
 
+    discovery_parser = subparsers.add_parser(
+        "discovery-audit",
+        help="Check public source registers and discovery questions for integrity.",
+    )
+    discovery_parser.add_argument(
+        "--repo",
+        type=Path,
+        default=Path("."),
+        help="Local repository path containing the data/ registers.",
+    )
+    discovery_parser.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Optional output folder for discovery_audit.json.",
+    )
+    discovery_parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Exit with status 1 when any finding is present.",
+    )
+
     evidence_parser = subparsers.add_parser(
         "evidence",
         help="Validate or normalize an offline, user-owned evidence envelope.",
@@ -539,6 +562,26 @@ def main(argv: list[str] | None = None) -> int:
             f"with {integration_result.payload_count} prepared rows."
         )
         print(f"Wrote {integration_result.output_path}")
+        return 0
+
+    if args.command == "discovery-audit":
+        discovery_result = audit_source_registers(
+            repository_path=args.repo,
+            output_directory=args.out,
+        )
+        print(
+            f"Audited {discovery_result['declared_sources']} declared sources and "
+            f"{discovery_result['declared_questions']} discovery question(s); "
+            f"{discovery_result['finding_count']} finding(s)."
+        )
+        print(f"Registers ready: {str(discovery_result['registers_ready']).lower()}")
+        for finding in (
+            discovery_result["register_findings"] + discovery_result["question_findings"]
+        ):
+            print(f"  {finding['file']} {finding['record_id']} {finding['field']}: "
+                  f"{finding['problem']}")
+        if args.strict and not discovery_result["registers_ready"]:
+            return 1
         return 0
 
     if args.command == "privacy-audit":
