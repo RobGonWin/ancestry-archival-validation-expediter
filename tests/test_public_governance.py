@@ -107,6 +107,13 @@ def test_slop_track_map_is_conceptual_only_and_not_submitted() -> None:
     assert tracks["delta-star"]["conceptual_fit"] == "not-applicable"
     assert all(track["contribution_status"] == "none" for track in tracks.values())
 
-    guide = (ROOT / "docs" / "SLOP_TRACK_MAPPING.md").read_text(encoding="utf-8")
-    assert "not a submission, application, contribution plan" in guide
-    assert "No upstream\ncode has been copied, forked, submitted" in guide
+    # The prose companion was removed; the boundary guarantee it carried is
+    # asserted against the machine-readable map so nothing is weakened.
+    boundary = mapping["boundary"]
+    assert "not an application, affiliation, eligibility claim" in boundary
+    assert "contribution plan" in boundary
+    assert mapping["separate_preparation"]["relationship_to_aave"] == "none"
+    assert (
+        mapping["separate_preparation"]["status"]
+        == "no upstream contribution has been made, submitted, or authorized"
+    )
