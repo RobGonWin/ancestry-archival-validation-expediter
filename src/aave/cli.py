@@ -34,6 +34,9 @@ from aave.private_bridge import load_public_projection_receipt
 from aave.zip_archives import inspect_zip_archive
 
 
+from aave.nea_research import register_cli as register_nea_cli, run_cli as run_nea_cli
+
+
 def build_parser() -> argparse.ArgumentParser:
     """Build the top-level CLI parser."""
     parser = argparse.ArgumentParser(
@@ -41,6 +44,7 @@ def build_parser() -> argparse.ArgumentParser:
         description="Local-first archival validation tools for genealogy archives.",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
+    register_nea_cli(subparsers)
 
     scan_parser = subparsers.add_parser(
         "scan",
@@ -716,6 +720,12 @@ def main(argv: list[str] | None = None) -> int:
         load_public_projection_receipt(args.input)
         print("Valid public projection receipt.")
         return 0
+
+    if args.command == "nea":
+        try:
+            return run_nea_cli(args)
+        except (ValueError, OSError) as error:
+            parser.error(str(error))
 
     parser.error(f"Unknown command: {args.command}")
     return 2

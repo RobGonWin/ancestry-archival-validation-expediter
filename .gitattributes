@@ -1,0 +1,4 @@
+
+data/public/*.csv -text
+data/public/*.json -text
+*.xlsx binary
