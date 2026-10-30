@@ -115,3 +115,8 @@ The Slop track map is an informational compatibility assessment only. AAVE is
 not submitted to, affiliated with, eligible for, or promised rewards by
 Slop.cash or any named track, and no upstream contribution is planned or
 authorized. See [`docs/SLOP_TRACK_MAPPING.md`](docs/SLOP_TRACK_MAPPING.md).
+
+
+## National Heritage Fellowship comparison
+
+The reviewed public checkpoint is in `data/public`:584 identified subjects,473 named fellows and502 awards, with eight open collective boundaries. Run `python public_offline.py` for offline rank, exact-date, CSV, workbook and checksum verification. See [reproduction](docs/nea-publication-reproduction.md) and the [focused public explorer](https://robgonwin.github.io/national-heritage-fellow-longevity-archiver/site/). No private history or original evidence is included in this file-level extraction.
