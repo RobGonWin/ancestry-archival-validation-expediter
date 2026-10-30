@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {Workbook,SpreadsheetFile} from '@oai/artifact-tool';
+import {spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 
 const candidate=path.resolve(process.argv[2]);
 const previewDir=path.resolve(process.argv[3]);
@@ -86,6 +88,8 @@ const errors=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#N
 await fs.writeFile(path.join(previewDir,'formula-scan.json'),JSON.stringify(errors));
 const output=await SpreadsheetFile.exportXlsx(wb);
 await output.save(path.join(candidate,'nea-longevity-research-workbook.xlsx'));
+const normalization=spawnSync(process.env.PYTHON||'python',[fileURLToPath(new URL('./canonicalize_workbook.py',import.meta.url)),path.join(candidate,'nea-longevity-research-workbook.xlsx')],{encoding:'utf8'});
+if(normalization.status!==0)throw Error('Workbook canonicalization failed: '+normalization.stderr);
 const sidecar=path.join(candidate,'nea-longevity-research-workbook.xlsx.inspect.ndjson');
 try {await fs.rename(sidecar,path.join(previewDir,'workbook.inspect.ndjson'));} catch(e) {if(e.code!=='ENOENT')throw e;}
 console.log(JSON.stringify({sheets:sheets.map(s=>s.name),identifiedSubjects:d.people.length}));
