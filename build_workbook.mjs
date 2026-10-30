@@ -65,12 +65,19 @@ table('Leading Candidates',d.people.filter(r=>r.possible_rank_min<=10||['Ethel K
 table('Unresolved Collectives',d.unresolved_collectives,['award_id','display_name','public_source_url','review_status','unresolved_reason']);
 const sources=table('Source Register',d.sources,['source_id','public_source_url','source_publication_date','retrieval_date','link_status','rights_status']);
 const reviews=d.people.map(r=>({person_id:r.person_id,display_name:r.display_name,evidence_classification:r.evidence_classification,
-  review_reason:r.unresolved_reason||'Human publication approval pending; retain all evidence limitations.',review_decision:'pending',reviewed_at:null,reviewer:null}));
+  review_reason:r.unresolved_reason||'Optional follow-up research; retain all evidence limitations.',review_decision:'pending',reviewed_at:null,reviewer:null}));
 const queue=table('Research Review Queue',reviews,Object.keys(reviews[0]));
 queue.getRange(`E2:E${reviews.length+1}`).dataValidation={rule:{type:'list',values:['pending','approved','rejected','conflict']}};
 queue.getRange(`E2:G${reviews.length+1}`).format.fill='#FFF3CD';
 const validations=Object.entries(d.counts).map(([check,actual])=>({check,actual,status:'Recomputed from canonical source',notes:''}));
-for(const check of ['Human publication review','Public links revalidated','Image rights review','Independent sample review','CSV and workbook parity','Deterministic clean replay'])validations.push({check,actual:null,status:'Pending',notes:'See the external publication receipt. Editable spreadsheet statuses do not authorize release.'});
+for(const [check,status,notes] of [
+ ['Human publication review','Owner authorization recorded','See the hash-bound authorization. Personal cell-by-cell human review is not claimed.'],
+ ['Public links revalidated','Status in Source Register','Liveness checks do not verify historical claims. Unavailable, restricted and unchecked links remain explicit.'],
+ ['Image rights review','Source links only','No source image bytes are published. Unknown redistribution rights remain unknown.'],
+ ['Independent sample review','External review receipt','See the publication review record for reviewed profiles and limitations.'],
+ ['CSV and workbook parity','Run public_offline.py','The verifier checks all33population columns and the six output hashes.'],
+ ['Deterministic clean replay','Canonical packaging','Verify two independently authored outputs; compare the external replay receipt.']
+])validations.push({check,actual:null,status,notes});
 table('Publication Validation',validations,['check','actual','status','notes']);
 for(const sheet of [all,named]){
   const idx=allFields.indexOf('cutoff_date');const n=sheet===all?d.people.length:d.people.filter(r=>r.person_role==='named_fellow').length;
