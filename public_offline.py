@@ -191,6 +191,9 @@ def validate(folder):
         elif r['exact_lifespan_days'] is not None:
             raise ValueError('A bound is not an exact lifespan')
     receipt=json.loads((folder/'publication-receipt.json').read_text(encoding='utf-8'))
+    required={'nea-longevity-comparison.csv','nea-named-fellows.csv','nea-source-index.csv','nea-unresolved-collectives.csv','nea-public-projection.json','nea-longevity-research-workbook.xlsx'}
+    if set(receipt.get('output_sha256',{}))!=required:raise ValueError('Complete six-artifact checksum set required')
+    assert_public_text(receipt)
     for name,digest in receipt['output_sha256'].items():
         if Path(name).name!=name or sha((folder/name).read_bytes())!=digest:raise ValueError('Publication hash mismatch')
     if receipt['record_count']!=len(rows) or receipt['award_count']!=counts['official_awards']:raise ValueError('Receipt counts disagree')
